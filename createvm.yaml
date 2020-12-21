@@ -5,9 +5,9 @@
   tasks:
   - name: Clone the template
     vmware_guest:
-      hostname: "192.168.121.30"
-      username: "administrator@vsphere.local"
-      password: "P@ssw0rd"
+      hostname: "{{vcenter_url}}"
+      username: "{{vcenter_user}}"
+      password: "{{vcenter_password}}"
       validate_certs: False
       name: testvm_2
       template: win2019
