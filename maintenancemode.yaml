@@ -1,3 +1,4 @@
+---
 - name: Enter Maintenance Mode
   community.vmware.vmware_maintenancemode:
     hostname: "192.168.121.30"
