@@ -13,5 +13,6 @@
       template: win2019
       datacenter: "DC1"
       state: poweredon
+      folder: DC1/vm
       cluster: "Lab"
       wait_for_ip_address: yes
