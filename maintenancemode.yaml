@@ -1,0 +1,11 @@
+- name: Enter Maintenance Mode
+  community.vmware.vmware_maintenancemode:
+    hostname: "192.168.121.30"
+    username: "administrator@vsphere.local"
+    password: "P@ssw0rd"
+    esxi_hostname: "esx1.lab.rhdxb.com"
+    evacuate: true
+    timeout: 3600
+    state: present
+  delegate_to: localhost
+
