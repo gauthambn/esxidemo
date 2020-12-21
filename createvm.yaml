@@ -12,7 +12,6 @@
       name: testvm_2
       template: win2019
       datacenter: "DC1"
-      folder: /DC1/Test
       state: poweredon
       cluster: "Lab"
       wait_for_ip_address: yes
