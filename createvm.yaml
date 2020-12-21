@@ -1,0 +1,18 @@
+---
+- name: Create a VM from a template
+  hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: Clone the template
+    vmware_guest:
+      hostname: "192.168.121.30"
+      username: "administrator@vsphere.local"
+      password: "P@ssw0rd"
+      validate_certs: False
+      name: testvm_2
+      template: win2019
+      datacenter: "DC1"
+      folder: /DC1/Test
+      state: poweredon
+      cluster: "Lab"
+      wait_for_ip_address: yes
