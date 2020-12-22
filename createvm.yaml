@@ -5,11 +5,11 @@
   tasks:
   - name: Clone the template
     vmware_guest:
-      hostname: "{{vcenter_url}}"
-      username: "{{vcenter_user}}"
+      hostname: "{{vcenter_name}}"
+      username: "{{vcenter_username}}"
       password: "{{vcenter_password}}"
       validate_certs: False
-      name: testvm_2
+      name: "{{ vm_name }}"
       template: win2019
       datacenter: "DC1"
       state: poweredon
